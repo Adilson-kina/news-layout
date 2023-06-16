@@ -20,7 +20,8 @@ header nav{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     margin: 0px 5px;
 }
 .links-nav{
@@ -44,6 +45,7 @@ body{
     align-items: center;
     border-radius: 10px;
     padding: 15px 15px 25px 15px;
+    box-shadow: 1px 1px 5px #004981;
 }
 #noticias article .center-acessar-noticia{
     display: flex;
@@ -66,12 +68,18 @@ body{
     padding: 0px 10px 0px 10px;
 }
 @media(max-width:450px){
-    header input{
-        padding: 1px;
-        border-radius: 8px;
+    #search{
+        display: block;
+        width: 100px;
+        padding: 4px;
+        border-radius: 16px;
     }
     .links-nav:hover{
         font-size: 1.16em;
+    }
+    .fake-hamburger{
+        display: none;
+        font-family: 'Times New Roman', Times, serif;
     }
     #noticias{
         display: flex;
@@ -89,12 +97,17 @@ body{
         font-size: 1.06em;
     }
 }
-@media(max-width:700px){
+@media(min-width:451px) and (max-width:700px){
+    @media(min-width:451px) and (max-width:600px){
+        .fake-hamburger{
+            display: none;
+        }
+    }
     header span{
         font-size: 1.4em;
     }
-    header input{
-        width:500px;
+    #search{
+        width:250px;
         padding: 4px;
         border-radius: 15px;
     }
@@ -104,6 +117,14 @@ body{
     }
     header nav .links-nav:hover{
         font-size: 1.3em;
+    }
+    .fake-hamburger{
+        color: white;
+        font-size: 1.11em;
+    }
+    .fake-hamburger:hover{
+        font-size: 1.3em;
+        text-decoration:underline ;
     }
     #noticias{
         display: flex;
@@ -143,13 +164,16 @@ body{
     }
 }
 /*FORM*/
-h1{
+.top-border{
     background-color: #f5f5f5;
     text-align: center;
     border: 2px solid black;
     border-bottom: none;
     width: fit-content;
-    padding: 5px 70px;
+    padding: 5px 48px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 1px 0px 1px #004981;
 }
 .signin-form{
     text-align: center;
@@ -162,7 +186,10 @@ h1{
     height: fit-content;
     border: 2px solid black;
     border-top: none;
-    padding: 5px 10px;
+    padding: 10px 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 1px 1px 1px #004981 ;
 }
 .center-borda{
     display: flex;
@@ -171,4 +198,56 @@ h1{
 .center-title{
     display: flex;
     justify-content: center;
+}
+#nome{
+    border-radius: 9px;
+    margin-bottom: 2px;
+}
+#senha{
+    border-radius: 9px;
+    margin-bottom: 2px;
+}
+.login-link:target{
+}
+.center-everything{
+    background-image:linear-gradient(to bottom, #006bbc,#006abc42 ,#006) ;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+.border-top{
+    background-color: #f5f5f5;
+    text-align: center;
+    border: 2px solid black;
+    border-bottom: none;
+    width: fit-content;
+    padding: 5px 44px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 1px 0px 1px #004981;
+}
+#confirmar-senha{
+    border-radius: 9px;
+    margin-bottom: 2px;
+}
+#email{
+    border-radius: 9px;
+    margin-bottom: 2px;
+}
+.link-position{
+    display: flex;
+    justify-content: end;
+}
+.form-nav{
+    display: flex;
+}
+.form-nav span{
+    padding: 0px 10px;
+}
+.form-nav span:hover{
+    font-size: 1.1em;
+    text-decoration: overline;
 }
