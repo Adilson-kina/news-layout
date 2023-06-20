@@ -46,6 +46,7 @@ body{
     border-radius: 10px;
     padding: 15px 15px 25px 15px;
     box-shadow: 1px 1px 5px #004981;
+    overflow: auto;
 }
 #noticias article .center-acessar-noticia{
     display: flex;
@@ -66,6 +67,26 @@ body{
 #noticias article .acessar-noticia:hover{
     background-color: rgb(150, 145, 145);
     padding: 0px 10px 0px 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer a{
+    color: white;
+    padding-right: 5px;
+}
+footer a:hover{
+    font-size: 1.1em;
+}
+.links-together{
+    display: flex;
+    padding: 0px 10px;
 }
 @media(max-width:450px){
     #search{
@@ -149,8 +170,19 @@ body{
         padding: 7px;
         width: 700px;
     }
+    .links-nav{
+        font-size: 1.2em;
+    }
     .links-nav:hover{
-        font-size: 1.4em;
+        font-size: 1.7em;
+    }
+    .fake-hamburger{
+        color: white;
+        font-size: 1.2em;
+    }
+    .fake-hamburger:hover{
+        font-size: 1.7em;
+        text-decoration:underline ;
     }
     #noticias{
         display: flex;
