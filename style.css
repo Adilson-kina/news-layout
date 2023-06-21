@@ -160,6 +160,9 @@ footer a:hover{
     #noticias article .acessar-noticia:hover{
         font-size: 1.1em;
     }
+    .links-together{
+        display: none;
+    }
 }
 @media(min-width:701px){
     header span{
@@ -194,34 +197,42 @@ footer a:hover{
         height: 350px;
         margin: 0px 15px 40px 15px;
     }
+    .links-together{
+        display: none;
+    }
 }
 /*FORM*/
-.top-border{
-    background-color: #f5f5f5;
-    text-align: center;
-    border: 2px solid black;
-    border-bottom: none;
+#form-nav{
+    color: white;
+    display: flex;
+    background-color: red;
+}
+#form-nav span{
+    padding: 0px 10px;
+}
+#form-nav span:hover{
+    font-size: 1.1em;
+    text-decoration: overline;
+}
+.center-everything{
+    background-image:linear-gradient(to bottom, #006bbc,#006abc42 ,#006) ;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.borda{
     width: fit-content;
-    padding: 5px 48px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    box-shadow: 1px 0px 1px #004981;
+    background-color: #d9d9d9;
+    border-color: black;
+    padding: 50px 15px;
+    border-radius: 15px;
 }
 .signin-form{
     text-align: center;
-}
-.borda{
-    display: flex;
-    justify-content: center;
-    background-color: #f5f5f5;
-    width: fit-content;
-    height: fit-content;
-    border: 2px solid black;
-    border-top: none;
-    padding: 10px 10px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    box-shadow: 1px 1px 1px #004981 ;
 }
 .center-borda{
     display: flex;
@@ -239,16 +250,8 @@ footer a:hover{
     border-radius: 9px;
     margin-bottom: 2px;
 }
-.login-link:target{
-}
-.center-everything{
-    background-image:linear-gradient(to bottom, #006bbc,#006abc42 ,#006) ;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
+.login-link:hover{
+    font-size: 1.1em;
 }
 .border-top{
     background-color: #f5f5f5;
@@ -272,14 +275,4 @@ footer a:hover{
 .link-position{
     display: flex;
     justify-content: end;
-}
-.form-nav{
-    display: flex;
-}
-.form-nav span{
-    padding: 0px 10px;
-}
-.form-nav span:hover{
-    font-size: 1.1em;
-    text-decoration: overline;
 }
