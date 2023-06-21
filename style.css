@@ -123,6 +123,9 @@ footer a:hover{
         .fake-hamburger{
             display: none;
         }
+        .links-together{
+            display: inline-block;
+        }
     }
     header span{
         font-size: 1.4em;
@@ -203,9 +206,7 @@ footer a:hover{
 }
 /*FORM*/
 #form-nav{
-    color: white;
     display: flex;
-    background-color: red;
 }
 #form-nav span{
     padding: 0px 10px;
@@ -213,6 +214,9 @@ footer a:hover{
 #form-nav span:hover{
     font-size: 1.1em;
     text-decoration: overline;
+}
+#form-nav span a{
+    color: white;
 }
 .center-everything{
     background-image:linear-gradient(to bottom, #006bbc,#006abc42 ,#006) ;
