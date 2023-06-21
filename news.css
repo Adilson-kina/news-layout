@@ -9,19 +9,17 @@ body{
 }
 h2{
     margin: 5px 10px 5px 15px;
-    text-align: justify;
     background-color: #2323230e;
 }
 h3{
     margin: 15px 0px 5px 10px;
-    text-align: justify;
 }
 h4{
     margin: 5px;
 }
 p{
     text-align: justify;
-    margin: 2px;
+    margin: 7px;
 }
 .table-title{
     font-size: 1.1em;
@@ -60,6 +58,9 @@ footer{
     justify-content: end;
     align-items: center;
     margin-top: 15px;
+}
+footer span{
+    margin-right: 10px;
 }
 footer a{
     color: rgb(112, 141, 236);
